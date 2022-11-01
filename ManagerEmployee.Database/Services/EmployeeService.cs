@@ -50,7 +50,7 @@ namespace ManagerEmployee.Database.Services
             }
             catch(Exception ex)
             {
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
                 login = null;
             }
             return login;
@@ -63,8 +63,6 @@ namespace ManagerEmployee.Database.Services
         /// <returns></returns>
         public async Task<DateEmployee> GetFindData(FindData filter)
         {
-            _logger.LogError("LOggg");
-
             try
             {
                 // truy vấn
@@ -98,7 +96,7 @@ namespace ManagerEmployee.Database.Services
             }
             catch(Exception ex) 
             {
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
                 return null;
             }
          }
@@ -117,7 +115,7 @@ namespace ManagerEmployee.Database.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
             }
             return employee;
         }
@@ -215,7 +213,7 @@ namespace ManagerEmployee.Database.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
                 bl = (byte)Validator.ERROR;
             }
             return bl;
@@ -280,8 +278,7 @@ namespace ManagerEmployee.Database.Services
             }
             catch (Exception ex)
             {
-                //_logger.LogInformation("Hello World.");
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
                 bl = (byte)Validator.ERROR;
             }
             return bl;
@@ -299,10 +296,7 @@ namespace ManagerEmployee.Database.Services
             {
                 using (var context = new BALabTestContext())
                 {
-
-                    // Lấy Id nhân viên để lấy ra thông tin
                     var product = await (from p in context.Employees where (p.Id == Id) select p).FirstOrDefaultAsync();
-                    // Thay đổi trạng thái nhân viên thành False
                     if (product != null)
                     {
                         product.Isdelete = true;
@@ -310,11 +304,10 @@ namespace ManagerEmployee.Database.Services
                         await context.SaveChangesAsync();
                     }
                 }
-              
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error:{ex.Message},{ex.StackTrace}");
+                _logger.LogInformation(ex.Message);
                 bl = false;
             }
             return bl;
