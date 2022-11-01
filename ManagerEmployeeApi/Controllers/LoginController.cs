@@ -26,7 +26,7 @@ namespace ManagerEmployeeApi.Controllers
         /// </Modified>
         private readonly IConfiguration _config;
 
-        /// <summary>Employee service</summary>
+        /// <summary>Service xử lí của nhân viên</summary>
         /// <Modified>
         /// Name     Date     Comments
         /// sangnv 11/1/2022 created
