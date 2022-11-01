@@ -21,7 +21,11 @@ namespace ManagerEmployeeApi.Controllers
     /// <summary>Quản lí nhân viên thêm sửa xóa</summary>
     public class EmployeeController : ControllerBase
     {
+        /// <summary>EmployeeService</summary>
         private readonly IEmployeeService _employeeService = null;
+
+        /// <summary>Initializes a new instance of the <see cref="EmployeeController" /> class.</summary>
+        /// <param name="employeeService">The employee service.</param>
         public EmployeeController(IEmployeeService employeeService)
         {
             _employeeService = employeeService;

@@ -26,6 +26,11 @@ namespace ManagerEmployee.Database.Services
             this._context = new BALabTestContext();
             data = _context.Set<Employee>();
         }
+        /// <summary>Initializes a new instance of the <see cref="EmployeeService" /> class.</summary>
+        /// <param name="_context">The context.</param>
+        /// <param name="_security">The security.</param>
+        /// <param name="logger">The logger.</param>
+        /// <param name="validator">The validator.</param>
         public EmployeeService(BALabTestContext _context , Security _security, ILogger<EmployeeService> logger, IValidator<Employee> validator)
         {
             this._context = _context;
