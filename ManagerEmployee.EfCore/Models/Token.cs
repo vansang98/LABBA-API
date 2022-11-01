@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace ManagerEmployee.EfCore.Models
 {
+    /// <summary>Dữ liêu Token trả ra khi đăng nhập vào API</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public class JWTTokenResponse
     {
         /// <summary> /// Chuỗi token /// </summary>
@@ -14,7 +19,7 @@ namespace ManagerEmployee.EfCore.Models
         /// <summary> /// Mã lỗi /// </summary>
         public int? Error { get; set; }
 
-        /// <summary> /// Mã lỗi /// </summary>
+        /// <summary> /// Tên tài khoản /// </summary>
         public string? Username { get; set; }
 
     }

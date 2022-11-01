@@ -16,27 +16,43 @@ using System.Web.Http.Cors;
 using Serilog;
 namespace ManagerEmployeeApi.Controllers
 {
+    /// <summary>Quản lí nhân viên</summary>
+    /// <Modified>
+    /// Name       Date         Comments
+    /// sangnv   11/1/2022      created
+    /// </Modified>
     [Route("api/[controller]")]
     [ApiController]
-    /// <summary>Quản lí nhân viên thêm sửa xóa</summary>
     public class EmployeeController : ControllerBase
     {
-        /// <summary>EmployeeService</summary>
+        /// <summary>Employee service</summary>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private readonly IEmployeeService _employeeService = null;
 
         /// <summary>Initializes a new instance of the <see cref="EmployeeController" /> class.</summary>
         /// <param name="employeeService">The employee service.</param>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public EmployeeController(IEmployeeService employeeService)
         {
             _employeeService = employeeService;
         }
 
         #region
-        /// <summary>
-        /// lấy danh sách nhân viên theo điều kiện lọc
-        /// </summary>   
-        /// <param name="datafind"></param>
-        /// <returns></returns>
+        /// <summary>Lấy danh sách nhân viên theo điều kiện lọc</summary>
+        /// <param name="finddata">The finddata.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [HttpPost()]
         [Route("/getlist/")]
         public async Task<IActionResult> GetList([FromBody] FindData finddata)
@@ -57,6 +73,10 @@ namespace ManagerEmployeeApi.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [HttpGet()]
         [Route("/getbyid/{id}")]
         public async Task<IActionResult> GetById([System.Web.Http.FromUri] Guid id)
@@ -77,6 +97,10 @@ namespace ManagerEmployeeApi.Controllers
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [HttpPost]
         [Route("/addpost")]
         public async Task<IActionResult> AddPost([FromBody] Employee data)
@@ -102,6 +126,10 @@ namespace ManagerEmployeeApi.Controllers
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [HttpPost]
         [Route("/update/{id}")]
         public async Task<IActionResult> Update([System.Web.Http.FromUri] Guid id,[FromBody]  Employee data)
@@ -130,6 +158,10 @@ namespace ManagerEmployeeApi.Controllers
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [HttpPost]
         [Route("/delete/{id}")]
         public async Task<IActionResult> Delete(Guid Id)

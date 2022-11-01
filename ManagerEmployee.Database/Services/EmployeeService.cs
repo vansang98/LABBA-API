@@ -12,20 +12,46 @@ using Microsoft.Extensions.Logging;
 
 namespace ManagerEmployee.Database.Services
 {
-    /// <summary>Nhân viên quản lý thêm sửa xóa</summary>
+    /// <summary>Quản lí nhân viên danh sách,thêm,sửa,xóa</summary>
+    /// <Modified>
+    /// Name     Date    Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public class EmployeeService : IEmployeeService 
     {
-        private List<Employee> context;
-        private DbSet<Employee> data = null;
+        /// <summary>Dbcontext kết nối cơ sở dữ liệu</summary>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private BALabTestContext _context = null;
+
+        /// <summary>Token JWT đăng nhập</summary>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private Security security = null;
+
+        /// <summary>Logger</summary>
+        /// <Modified>
+        /// Name     Date    Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private readonly Microsoft.Extensions.Logging.ILogger<EmployeeService> _logger;
+
+        /// <summary>Validator dữ liệu đầu vào</summary>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private IValidator<Employee> _validator;
+
         public EmployeeService()
         {
             this._context = new BALabTestContext();
-            data = _context.Set<Employee>();
         }
+
         /// <summary>Initializes a new instance of the <see cref="EmployeeService" /> class.</summary>
         /// <param name="_context">The context.</param>
         /// <param name="_security">The security.</param>
@@ -34,7 +60,6 @@ namespace ManagerEmployee.Database.Services
         public EmployeeService(BALabTestContext _context , Security _security, ILogger<EmployeeService> logger, IValidator<Employee> validator)
         {
             this._context = _context;
-            data = _context.Set<Employee>();
             security = _security;
             this._logger = logger;
             _validator = validator;
@@ -46,6 +71,10 @@ namespace ManagerEmployee.Database.Services
         /// <param name="Phonenumber"></param>
         /// <param name="Email"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<Employee> GetLogin(string Phonenumber, string Password)
         {
             var login = new Employee();
@@ -66,6 +95,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="datafind"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<DateEmployee> GetFindData(FindData filter)
         {
             try
@@ -111,6 +144,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="Id"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<Employee> GetById(Guid Id)
         {
             var employee = new Employee();
@@ -130,6 +167,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="Email"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<bool> CheckEmail(string Email,bool InsertOrUpdate,Guid Id)
         {
             var findEmail = new Employee();
@@ -149,6 +190,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="Phonenumber"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<bool> CheckPhoneNumber(string Phonenumber, bool InsertOrUpdate,Guid Id)
         {
             var findPhonenumber = new Employee();
@@ -168,6 +213,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="employee"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<byte> Insert(Employee employee)
         {
             byte bl = (byte)Validator.ERROR;
@@ -229,6 +278,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="employee"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<byte> Update(Employee employee ,Guid Id)
         {
             byte bl = (byte)Validator.ERROR;
@@ -294,6 +347,10 @@ namespace ManagerEmployee.Database.Services
         /// </summary>
         /// <param name="employee"></param>
         /// <returns></returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public async Task<bool> Delete(Guid Id)
         {
             bool bl = true;

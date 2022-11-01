@@ -5,7 +5,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace ManagerEmployee.EfCore.Models
 {
-    /// <summary> DatabaseContext</summary>
+    /// <summary>Context kết nối cơ sở dữ liệu</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public partial class BALabTestContext : DbContext
     {
         public BALabTestContext()
@@ -17,6 +21,12 @@ namespace ManagerEmployee.EfCore.Models
         {
         }
 
+        /// <summary>Gets or sets the employees.</summary>
+        /// <value>The employees.</value>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public virtual DbSet<Employee> Employees { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

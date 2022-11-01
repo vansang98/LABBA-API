@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace ManagerEmployee.Common.Common
 {
+    /// <summary>Enum dùng cho validate dữ liệu</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public enum Validator
     {
         ERROR = 0,
@@ -13,6 +18,12 @@ namespace ManagerEmployee.Common.Common
         ERROR_EMAIL = 2,
         ERROR_PHONENUMBER = 3
     }
+
+    /// <summary>Enum dùng cho giới tính</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public enum Gender
     {
         NULL = 0,
@@ -20,6 +31,12 @@ namespace ManagerEmployee.Common.Common
         FEMALE = 2,
         MALE_FEMALE = 3,
     }
+
+    /// <summary>Enum dùng cho đăng nhập</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public enum LoginEnum
     {
         ERROR = 2,

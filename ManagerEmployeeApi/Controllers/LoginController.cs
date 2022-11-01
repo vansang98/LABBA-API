@@ -11,26 +11,50 @@ using ManagerEmployee.Common.Common.TokenService;
 namespace ManagerEmployeeApi.Controllers
 {
     /// <summary>Đăng nhập quản lí nhân viên</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
     {
+        /// <summary>Configuration</summary>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private readonly IConfiguration _config;
-        private readonly IEmployeeService _employeeService = null; 
+
+        /// <summary>Employee service</summary>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
+        private readonly IEmployeeService _employeeService = null;
+
+        /// <summary>Token service</summary>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         private readonly ITokenServiceJWT _tokenService = null;
-        private Security _security = null;
-        public LoginController(IEmployeeService employeeService, Security security, ITokenServiceJWT tokenService, IConfiguration config)
+        public LoginController(IEmployeeService employeeService, ITokenServiceJWT tokenService, IConfiguration config)
         {
             _config = config;
             _employeeService = employeeService;
-            _security = security;
             _tokenService = tokenService;
         }
 
-        /// <summary>
-        /// lấy danh sách nhân viên
-        /// </summary>
-        /// <returns>0-Lỗi ; Token-Thành công ; 2-Tài khoản không đúng; 3-Sai mật khẩu:</returns>
+        /// <summary>Đăng nhập thông tin nhân viên</summary>
+        /// <param name="employeeLogin">The employee login.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         [Route("/login")]
         [HttpPost()]
         public async Task<IActionResult> Login([FromBody] EmployeeLogin employeeLogin)

@@ -11,17 +11,30 @@ using System.Threading.Tasks;
 namespace ManagerEmployee.Common.Common.TokenService
 {
     /// <summary>Token JWT</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public class TokenServiceJWT : ITokenServiceJWT
     {
-        private const double EXPIRY_DURATION_MINUTES = 1;
+        /// <summary>Đặt thời gian đăng ký Token</summary>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
+        private const double EXPIRY_DURATION_MINUTES = 5;
 
-        /// <summary>Builds the token.</summary>
+        /// <summary>Tạo chuỗi Token</summary>
         /// <param name="key">The key.</param>
         /// <param name="issuer">The issuer.</param>
         /// <param name="employee">The employee.</param>
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public string BuildToken(string key, string issuer, Employee employee)
         {
             var claims = new[] {
@@ -29,8 +42,7 @@ namespace ManagerEmployee.Common.Common.TokenService
             new Claim(ClaimTypes.Email, employee.Email),
             new Claim(ClaimTypes.NameIdentifier,
             Guid.NewGuid().ToString())
-        };
-
+            };
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
             var tokenDescriptor = new JwtSecurityToken(issuer, issuer, claims,
@@ -44,6 +56,10 @@ namespace ManagerEmployee.Common.Common.TokenService
         /// <param name="token">The token.</param>
         /// <returns>
         ///   <c>true</c> if [is token valid] [the specified key]; otherwise, <c>false</c>.</returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         public bool IsTokenValid(string key, string issuer, string token)
         {
             var mySecret = Encoding.UTF8.GetBytes(key);

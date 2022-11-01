@@ -8,6 +8,10 @@ using System.Threading.Tasks;
 namespace ManagerEmployee.Database.Services
 {
     /// <summary>IEmployeeService</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public interface IEmployeeService
     {
         /// <summary>Gets the login.</summary>
@@ -16,6 +20,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<Employee> GetLogin(string Phonenumber, string Password);
 
         /// <summary>Gets the find data.</summary>
@@ -23,6 +31,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<DateEmployee> GetFindData(FindData datafind);
 
         /// <summary>Inserts the specified employee.</summary>
@@ -30,6 +42,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<byte> Insert(Employee employee);
 
         /// <summary>Gets the by identifier.</summary>
@@ -37,6 +53,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<Employee> GetById(Guid Id);
 
         /// <summary>Updates the specified employee.</summary>
@@ -45,6 +65,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<byte> Update(Employee employee, Guid Id);
 
         /// <summary>Deletes the specified identifier.</summary>
@@ -52,6 +76,10 @@ namespace ManagerEmployee.Database.Services
         /// <returns>
         ///   <br />
         /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
         Task<bool> Delete(Guid Id);
     }
 }

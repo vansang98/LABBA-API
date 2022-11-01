@@ -7,9 +7,23 @@ using System.Threading.Tasks;
 
 namespace ManagerEmployee.Common.Common
 {
-    public  class Security
+    /// <summary>Mã hóa dữ liệu</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
+    public class Security
     {
-        public  string ConvertString(string stringconvert)
+        /// <summary>Mã hóa dữ liệu truyền vào</summary>
+        /// <param name="stringconvert">The stringconvert.</param>
+        /// <returns>
+        ///   <br />
+        /// </returns>
+        /// <Modified>
+        /// Name     Date     Comments
+        /// sangnv 11/1/2022 created
+        /// </Modified>
+        public string ConvertString(string stringconvert)
         {
             MD5 mh = MD5.Create();
             //Chuyển kiểu chuổi thành kiểu byte
@@ -25,6 +39,5 @@ namespace ManagerEmployee.Common.Common
             }
             return sb.ToString();
         }
-    
      }
 }

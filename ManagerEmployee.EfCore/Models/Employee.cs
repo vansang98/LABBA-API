@@ -4,6 +4,11 @@ using System.Collections.Generic;
 
 namespace ManagerEmployee.EfCore.Models
 {
+    /// <summary>Class của nhân viên</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public partial class Employee
     {
         /// <summary>  Id nhân viên /// </summary>
@@ -49,23 +54,34 @@ namespace ManagerEmployee.EfCore.Models
         public Guid? Updateuser { get; set; }
     }
 
+    /// <summary>Dữ liệu trả ra có phân trang</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public class DateEmployee
     {
-        /// <summary> /// </summary>
+        /// <summary> Danh sách nhân viên /// </summary>
         public List<Employee> employee { get; set; }
 
-        /// <summary> /// </summary>
+        /// <summary>Tổng số bản ghi /// </summary>
         public int totalCount { get; set; }
 
-        /// <summary> /// </summary>
+        /// <summary>Độ dài page /// </summary>
         public int pageSize { get; set; }
 
-        /// <summary> /// </summary>
+        /// <summary>Số page /// </summary>
         public int currentPage { get; set; }
 
-        /// <summary>  Tổng số bản ghi  /// </summary>
+        /// <summary>Tổng số trang /// </summary>
         public int totalPages { get; set; }
     }
+
+    /// <summary>Validator dữ liệu đầu vào của nhân viên</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     public class EmployeeValidator : AbstractValidator<Employee>
     {
         public EmployeeValidator()
