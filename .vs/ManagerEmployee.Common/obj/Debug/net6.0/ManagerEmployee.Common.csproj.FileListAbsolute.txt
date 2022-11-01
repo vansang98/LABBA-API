@@ -1,0 +1,15 @@
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\bin\Debug\net6.0\ManagerEmployee.Common.deps.json
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\bin\Debug\net6.0\ManagerEmployee.Common.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\bin\Debug\net6.0\ManagerEmployee.Common.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.csproj.AssemblyReference.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.AssemblyInfoInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.AssemblyInfo.cs
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.csproj.CoreCompileInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\refint\ManagerEmployee.Common.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ref\ManagerEmployee.Common.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\bin\Debug\net6.0\ManagerEmployee.EfCore.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\bin\Debug\net6.0\ManagerEmployee.EfCore.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Common\obj\Debug\net6.0\ManagerEmployee.Common.csproj.CopyComplete

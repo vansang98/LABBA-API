@@ -60,10 +60,6 @@ namespace ManagerEmployeeApi.Controllers
             try
             {
                 Employee employee = await _employeeService.GetById(id);
-                if (employee == null)
-                {
-                    return NotFound();
-                }
                 return Ok(employee);
             }
             catch (Exception ex)
