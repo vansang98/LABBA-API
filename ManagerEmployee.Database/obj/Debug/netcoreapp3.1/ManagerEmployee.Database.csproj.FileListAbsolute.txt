@@ -1,0 +1,10 @@
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.csproj.AssemblyReference.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.AssemblyInfoInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.AssemblyInfo.cs
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.csproj.CoreCompileInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\bin\Debug\netcoreapp3.1\ManagerEmployee.Database.deps.json
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\bin\Debug\netcoreapp3.1\ManagerEmployee.Database.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\bin\Debug\netcoreapp3.1\ManagerEmployee.Database.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.Database\obj\Debug\netcoreapp3.1\ManagerEmployee.Database.pdb

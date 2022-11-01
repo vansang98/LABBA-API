@@ -1,0 +1,14 @@
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\bin\Debug\net6.0\ManagerEmployee.EfCore.deps.json
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\bin\Debug\net6.0\ManagerEmployee.EfCore.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\bin\Debug\net6.0\ManagerEmployee.EfCore.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.csproj.AssemblyReference.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.AssemblyInfoInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.AssemblyInfo.cs
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.csproj.CoreCompileInputs.cache
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\refint\ManagerEmployee.EfCore.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.pdb
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ref\ManagerEmployee.EfCore.dll
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\bin\Debug\net6.0\ManagerEmployee.EfCore.runtimeconfig.json
+C:\Users\sangnv\source\repos\ManagerEmployeeLab\ManagerEmployee.EfCore\obj\Debug\net6.0\ManagerEmployee.EfCore.genruntimeconfig.cache
