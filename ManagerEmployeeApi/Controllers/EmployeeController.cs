@@ -25,7 +25,7 @@ namespace ManagerEmployeeApi.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        /// <summary>Employee service</summary>
+        /// <summary>Service xử lí dữ liệu nhân viên</summary>
         /// <Modified>
         /// Name     Date    Comments
         /// sangnv 11/1/2022 created
@@ -114,7 +114,6 @@ namespace ManagerEmployeeApi.Controllers
                 }
                 catch (Exception)
                 {
-
                     return BadRequest();
                 }
             }
@@ -169,11 +168,9 @@ namespace ManagerEmployeeApi.Controllers
             try
             {
                 return Ok(await _employeeService.Delete(Id));
-
             }
             catch (Exception)
             {
-
                 return BadRequest();
             }
         }

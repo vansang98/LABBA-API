@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace ManagerEmployeeApi.Controllers
 {
+    /// <summary>WeatherForecast</summary>
+    /// <Modified>
+    /// Name     Date     Comments
+    /// sangnv 11/1/2022 created
+    /// </Modified>
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
